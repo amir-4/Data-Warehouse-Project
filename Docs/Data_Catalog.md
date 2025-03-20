@@ -2,7 +2,7 @@
 
 ## Overview
 The Gold Layer is the business-level data representation, structured to support analytical and reporting use cases. It consists of dimension tables and fact tables for specific business metrics.
-
+---
 ## 1. gold.dim_customers
 
 ### Purpose:
@@ -22,6 +22,7 @@ Stores customer details enriched with demographic and geographic data.
 | birthdate      | DATE          | The date of birth of the customer, formatted as YYYY-MM-DD (e.g., 1971-10-06). |
 | create_date    | DATE          | The date and time when the customer record was created in the system. |
 
+---
 ## 2. gold.dim_products
 
 ### Purpose:
@@ -42,6 +43,7 @@ Provides information about the products and their attributes.
 | product_line         | NVARCHAR(50)  | The specific product line or series to which the product belongs (e.g., Road, Mountain). |
 | start_date          | DATE          | The date when the product became available for sale or use. |
 
+---
 ## 3. gold.fact_sales
 
 ### Purpose:
